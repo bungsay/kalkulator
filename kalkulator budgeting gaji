@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD><TITLE>Kalkulator Budgeting 50/30/20</TITLE></HEAD>
+<BODY>
+<P><SCRIPT language="JavaScript">
+<!--
+function jumlah()
+{
+var bil1 = parseFloat(document.fform.bilangan1.value);
+if (isNaN (bil1))
+bil1=0.0;
+
+var hasil = bil1 * 0.3;
+var hasil2 = bil1 * 0.2;
+var hasil3 = bil1 * 0.5;
+
+document.write("Jumlah Uang Untuk Hiburan dan Kebutuhan Lain = " + hasil + "<br>");
+document.write("Jumlah Uang Untuk di Tabung = " + hasil2 + "<br>");
+document.write("Jumlah Uang untuk kebutuhan sehari-hari dan tagihan wajib = " + hasil3 + "<br>");
+}
+//--></SCRIPT></P>
+<FORM NAME ="fform">
+<H1><BR>Memasukkan Data Lewat Keyboard</H1>
+<PRE>
+Besaran Gaji Bulanan   :<input type="text" size="11" name="bilangan1">
+</PRE>
+<P>
+<INPUT TYPE="button" value="Jumlahkan" onclick="jumlah()">
+<INPUT TYPE="reset" value="Ulang">
+</FORM>
+</BODY>
+</HTML>
